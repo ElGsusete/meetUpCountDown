@@ -21,17 +21,39 @@
   align-items: center;
 }
 
+/* SVG Tail Wagging Animation */
+.catTail {
+  transform-origin: 14px 13px;
+  transform-box: fill-box;
+  animation: tailWag 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes tailWag {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(14deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
 /* Actions & Keyframes */
 .idle {
   animation: gentleBreathing 2.5s ease-in-out infinite;
 }
 
 .bounce {
-  animation: happyBounce 0.8s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+  animation: happyBounce 0.7s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
 }
 
 .walk {
-  animation: waddleWalk 0.6s linear infinite alternate;
+  animation: waddleWalk 2.2s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
 }
 
 .sleep {
@@ -58,16 +80,25 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-12px);
+    transform: translateY(-14px);
   }
 }
 
 @keyframes waddleWalk {
   0% {
-    transform: translateY(0) rotate(-3deg);
+    transform: translateX(-14px) rotate(-4deg) translateY(0);
+  }
+  25% {
+    transform: translateX(-7px) rotate(4deg) translateY(-4px);
+  }
+  50% {
+    transform: translateX(0px) rotate(-4deg) translateY(0);
+  }
+  75% {
+    transform: translateX(7px) rotate(4deg) translateY(-4px);
   }
   100% {
-    transform: translateY(-4px) rotate(3deg);
+    transform: translateX(14px) rotate(-4deg) translateY(0);
   }
 }
 

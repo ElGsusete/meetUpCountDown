@@ -67,48 +67,18 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="12" y="11" width="1" height="3" fill="#1A1A1A" />
             <rect x="4" y="17" width="9" height="1" fill="#1A1A1A" />
 
-            {/* Curled Fluffy Tail Outline */}
-            <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
-            <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
-            <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
-            <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
-            <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
-            <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
-
-            {/* FILLS */}
-            {/* Inner Ear Pink */}
-            <rect x="3" y="2" width="2" height="2" fill="#FFB7B2" />
-            <rect x="15" y="2" width="2" height="2" fill="#FFB7B2" />
-
-            {/* Head Orange Fill */}
-            <rect x="3" y="5" width="14" height="6" fill="#D36B36" />
-            <rect x="3" y="2" width="1" height="1" fill="#D36B36" />
-            <rect x="16" y="2" width="1" height="1" fill="#D36B36" />
-
-            {/* Tabby Dark Stripes */}
-            <rect x="6" y="5" width="1" height="2" fill="#A8481A" />
-            <rect x="9" y="5" width="2" height="2" fill="#A8481A" />
-            <rect x="13" y="5" width="1" height="2" fill="#A8481A" />
-
-            {/* Eyes (1x2 dark dots) & Nose */}
-            <rect x="6" y="7" width="1" height="2" fill="#1A1A1A" />
-            <rect x="9" y="8" width="1" height="1" fill="#1A1A1A" />
-            <rect x="12" y="7" width="1" height="2" fill="#1A1A1A" />
-
-            {/* Body Fill */}
-            <rect x="5" y="11" width="7" height="6" fill="#D36B36" />
-
-            {/* Beige Belly / Chest Patch */}
-            <rect x="5" y="13" width="3" height="4" fill="#F7DBC3" />
-
-            {/* Paw Notches */}
-            <rect x="7" y="16" width="1" height="1" fill="#1A1A1A" />
-            <rect x="9" y="16" width="1" height="1" fill="#1A1A1A" />
-
-            {/* Tail Fill */}
-            <rect x="14" y="13" width="2" height="1" fill="#D36B36" />
-            <rect x="15" y="8" width="3" height="4" fill="#D36B36" />
-            <rect x="16" y="9" width="1" height="2" fill="#A8481A" /> {/* Tail stripe */}
+            {/* Curled Fluffy Tail with Wag Animation */}
+            <g className={styles.catTail}>
+              <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
+              <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
+              <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
+              <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
+              <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
+              <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
+              <rect x="14" y="13" width="2" height="1" fill="#D36B36" />
+              <rect x="15" y="8" width="3" height="4" fill="#D36B36" />
+              <rect x="16" y="9" width="1" height="2" fill="#A8481A" /> {/* Tail stripe */}
+            </g>
           </svg>
         );
 
@@ -140,13 +110,6 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="12" y="11" width="1" height="3" fill="#1A1A1A" />
             <rect x="4" y="17" width="9" height="1" fill="#1A1A1A" />
 
-            <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
-            <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
-            <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
-            <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
-            <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
-            <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
-
             {/* FILLS */}
             <rect x="3" y="2" width="2" height="2" fill="#FF80AB" />
             <rect x="15" y="2" width="2" height="2" fill="#FF80AB" />
@@ -171,8 +134,16 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="9" y="16" width="1" height="1" fill="#1A1A1A" />
 
             {/* Tail */}
-            <rect x="14" y="13" width="2" height="1" fill="#2C2C2C" />
-            <rect x="15" y="8" width="3" height="4" fill="#2C2C2C" />
+            <g className={styles.catTail}>
+              <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
+              <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
+              <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
+              <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
+              <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
+              <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
+              <rect x="14" y="13" width="2" height="1" fill="#2C2C2C" />
+              <rect x="15" y="8" width="3" height="4" fill="#2C2C2C" />
+            </g>
           </svg>
         );
 
@@ -204,13 +175,6 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="12" y="11" width="1" height="3" fill="#1A1A1A" />
             <rect x="4" y="17" width="9" height="1" fill="#1A1A1A" />
 
-            <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
-            <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
-            <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
-            <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
-            <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
-            <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
-
             {/* FILLS */}
             <rect x="3" y="2" width="2" height="2" fill="#FF80AB" />
             <rect x="15" y="2" width="2" height="2" fill="#FF80AB" />
@@ -232,8 +196,16 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="9" y="16" width="1" height="1" fill="#1A1A1A" />
 
             {/* White Tail */}
-            <rect x="14" y="13" width="2" height="1" fill="#FFFFFF" />
-            <rect x="15" y="8" width="3" height="4" fill="#FFFFFF" />
+            <g className={styles.catTail}>
+              <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
+              <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
+              <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
+              <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
+              <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
+              <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
+              <rect x="14" y="13" width="2" height="1" fill="#FFFFFF" />
+              <rect x="15" y="8" width="3" height="4" fill="#FFFFFF" />
+            </g>
           </svg>
         );
 
@@ -265,13 +237,6 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="12" y="11" width="1" height="3" fill="#1A1A1A" />
             <rect x="4" y="17" width="9" height="1" fill="#1A1A1A" />
 
-            <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
-            <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
-            <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
-            <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
-            <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
-            <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
-
             {/* FILLS */}
             <rect x="3" y="2" width="2" height="2" fill="#FFB7B2" />
             <rect x="15" y="2" width="2" height="2" fill="#FFB7B2" />
@@ -301,9 +266,17 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="9" y="16" width="1" height="1" fill="#1A1A1A" />
 
             {/* Tail Fill */}
-            <rect x="14" y="13" width="2" height="1" fill="#757575" />
-            <rect x="15" y="8" width="3" height="4" fill="#757575" />
-            <rect x="16" y="9" width="1" height="2" fill="#424242" />
+            <g className={styles.catTail}>
+              <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
+              <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
+              <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
+              <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
+              <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
+              <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
+              <rect x="14" y="13" width="2" height="1" fill="#757575" />
+              <rect x="15" y="8" width="3" height="4" fill="#757575" />
+              <rect x="16" y="9" width="1" height="2" fill="#424242" />
+            </g>
           </svg>
         );
 
@@ -335,39 +308,17 @@ export const PixelAnimal: React.FC<PixelAnimalProps> = ({
             <rect x="12" y="11" width="1" height="3" fill="#1A1A1A" />
             <rect x="4" y="17" width="9" height="1" fill="#1A1A1A" />
 
-            <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
-            <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
-            <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
-            <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
-            <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
-            <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
-
-            {/* FILLS */}
-            <rect x="3" y="2" width="2" height="2" fill="#FFFFFF" />
-            <rect x="15" y="2" width="2" height="2" fill="#FFFFFF" />
-
-            {/* Pastel Pink Fill */}
-            <rect x="3" y="5" width="14" height="6" fill="#F48FB1" />
-            <rect x="3" y="2" width="1" height="1" fill="#F48FB1" />
-            <rect x="16" y="2" width="1" height="1" fill="#F48FB1" />
-
-            {/* Purple Eyes & Nose */}
-            <rect x="6" y="7" width="1" height="2" fill="#8E24AA" />
-            <rect x="9" y="8" width="1" height="1" fill="#1A1A1A" />
-            <rect x="12" y="7" width="1" height="2" fill="#8E24AA" />
-
-            {/* Body Fill */}
-            <rect x="5" y="11" width="7" height="6" fill="#F48FB1" />
-
-            {/* White Chest Patch */}
-            <rect x="5" y="13" width="3" height="4" fill="#FFFFFF" />
-
-            <rect x="7" y="16" width="1" height="1" fill="#1A1A1A" />
-            <rect x="9" y="16" width="1" height="1" fill="#1A1A1A" />
-
             {/* Pink Fluffy Tail */}
-            <rect x="14" y="13" width="2" height="1" fill="#F48FB1" />
-            <rect x="15" y="8" width="3" height="4" fill="#F48FB1" />
+            <g className={styles.catTail}>
+              <rect x="13" y="13" width="1" height="1" fill="#1A1A1A" />
+              <rect x="14" y="12" width="4" height="1" fill="#1A1A1A" />
+              <rect x="18" y="8" width="1" height="5" fill="#1A1A1A" />
+              <rect x="15" y="7" width="3" height="1" fill="#1A1A1A" />
+              <rect x="14" y="8" width="1" height="2" fill="#1A1A1A" />
+              <rect x="13" y="10" width="1" height="3" fill="#1A1A1A" />
+              <rect x="14" y="13" width="2" height="1" fill="#F48FB1" />
+              <rect x="15" y="8" width="3" height="4" fill="#F48FB1" />
+            </g>
           </svg>
         );
 
