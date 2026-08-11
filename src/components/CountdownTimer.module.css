@@ -1,0 +1,99 @@
+.timerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .timerGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+.timerCard {
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid #F8BBD0;
+  border-radius: 20px;
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(248, 187, 208, 0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timerCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(248, 187, 208, 0.45);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.cardIcon {
+  font-size: 14px;
+}
+
+.cardLabel {
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  font-size: 10px;
+  color: #AD1457;
+  letter-spacing: 0.5px;
+}
+
+.cardValueWrapper {
+  margin: 8px 0;
+}
+
+.cardValue {
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  font-size: 32px;
+  color: #880E4F;
+  text-shadow: 2px 2px 0px #FFCDD2;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+@media (max-width: 480px) {
+  .cardValue {
+    font-size: 26px;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+  color: #F48FB1;
+  font-size: 10px;
+}
+
+.sparkleLeft, .sparkleRight {
+  animation: pulseSparkle 1.5s infinite alternate;
+}
+
+.sparkleRight {
+  animation-delay: 0.75s;
+}
+
+@keyframes pulseSparkle {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}

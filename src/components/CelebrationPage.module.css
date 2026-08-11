@@ -1,0 +1,104 @@
+.celebrationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  width: 100%;
+}
+
+.celebrationCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 4px solid #FF69B4;
+  border-radius: 30px;
+  padding: 40px 30px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(255, 105, 180, 0.35);
+  backdrop-filter: blur(12px);
+  animation: cardPopIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes cardPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.partyBanner {
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  font-size: 14px;
+  color: #D81B60;
+  background: #FFE4E1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 2px dashed #FF69B4;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #880E4F;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+.subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  color: #5D4037;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.confettiButton {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+  color: #FFF;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 20, 147, 0.4);
+  transition: all 0.2s ease;
+  margin-bottom: 30px;
+}
+
+.confettiButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.6);
+}
+
+.confettiButton:active {
+  transform: scale(0.98);
+}
+
+.animalPartyFloor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 2px dashed #F8BBD0;
+}
+
+.dancingAnimal {
+  margin: 5px;
+}
